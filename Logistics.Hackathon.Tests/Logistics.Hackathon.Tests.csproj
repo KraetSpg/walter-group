@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.20" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="7.0.1" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+        <PackageReference Include="NUnit" Version="3.13.2" />
+        <PackageReference Include="NUnit3TestAdapter" Version="4.6.0" />
+        <PackageReference Include="coverlet.collector" Version="3.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Logistics.Hackathon\Logistics.Hackathon.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\sample_decide_0.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\sample_decide_1.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\sample_decide_2.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\sample_decide_3.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+      <EmbeddedResource Include="Resources\sample_decide_4.json">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>
